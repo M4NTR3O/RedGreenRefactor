@@ -3,4 +3,6 @@
     <string name="result1">Result 1 test</string>
     <string name="result2">Result 2 test</string>
     <string name="textForFunction">Input text:</string>
+    <string name="Input">Input</string>
+    <string name="resultFunction">Result Function</string>
 </resources>

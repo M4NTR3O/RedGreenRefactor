@@ -9,11 +9,12 @@
 
     <TextView
         android:id="@+id/returnResult1Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="84dp"
+        android:layout_height="22dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,5 +27,84 @@
         app:layout_constraintEnd_toStartOf="@+id/returnResult1Test"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/result2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelResult1"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/returnResult2Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/labelResult2"
+        app:layout_constraintTop_toBottomOf="@+id/returnResult1Test"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <EditText
+        android:id="@+id/editTextQuery"
+        android:layout_width="210dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Input Text"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/returnResult1Test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/labelInput"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:text="@string/textForFunction"
+        app:layout_constraintBottom_toTopOf="@+id/labelResult1"
+        app:layout_constraintEnd_toStartOf="@+id/editTextQuery"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/buttonInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Input"
+        app:layout_constraintBottom_toTopOf="@+id/labelResult1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQuery" />
+
+    <TextView
+        android:id="@+id/textResultFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultFunction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewResultFunction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelResult2" />
+
+    <TextView
+        android:id="@+id/textViewResultFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/returnResult2Test" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
