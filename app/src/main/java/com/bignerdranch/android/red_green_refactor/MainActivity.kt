@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         firstTest()
     }
     fun getSearchUrl(query: String?): String?{
+        if (query == null){
+            return null
+        }
         return ""
     }
     fun firstTest(){
