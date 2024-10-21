@@ -9,6 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+fun getSearchUrl(query: String?): String?{
+    if (query == null){
+        return null
+    }
+    return "https://www.google.com/search?q=$query/"
+}
+
 class MainActivity : AppCompatActivity() {
     private lateinit var resultText: TextView
     private lateinit var resultText2: TextView
@@ -30,32 +37,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         button.setOnClickListener {
-            firstTest()
-            secondTest(editText.text.toString())
             resultFunction.text = getSearchUrl(editText.text.toString())
         }
     }
-    fun getSearchUrl(query: String?): String?{
-        if (query == null){
-            return null
-        }
-        return "https://www.google.com/search?q=$query/"
-    }
-    fun firstTest(){
 
-        if (getSearchUrl(null) == null){
-            resultText.text = "Success"
-        }
-        else{
-            resultText.text = "Not success"
-        }
-    }
-    fun secondTest(query: String?){
-        if (getSearchUrl(query) != null){
-            resultText2.text = "Success"
-        }
-        else{
-            resultText2.text = "No success"
-        }
-    }
 }
